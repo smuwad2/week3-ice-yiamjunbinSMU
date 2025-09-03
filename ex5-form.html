@@ -12,35 +12,35 @@
 <body>
     <div class="container mt-5">
         <form>
-            <div class="row g-3">
-                <div>
-                    <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName">
+            <div class="row g-3 mb-3">
+                <div class="mb-3 col-lg-4 col-md-6 col-sm-12">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName">
                 </div>
 
                 <!-- Email -->
-                <div>
-                    <label for="email">Email address</label>
-                    <input type="email" id="email">
+                <div class="mb-3 col-lg-4 col-md-6 col-sm-12">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email">
                 </div>
 
                 <!-- Gender -->
-                <div>
-                    <label>Gender</label>
-                    <div>
-                        <input type="radio" name="gender" id="male" value="male">
-                        <label for="male">Male</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="gender" id="female" value="female">
-                        <label for="female">Female</label>
-                    </div>
+                <div class="mb-3 col-lg-4 col-md-6 col-sm-12">
+                    <label class="form-label d-block">Gender</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
                 </div>
 
                 <!-- Country -->
-                <div>
-                    <label for="country">Country</label>
-                    <select id="country">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <label for="country" class="form-label">Country</label>
+                    <select id="country" class="form-select">
                         <option selected>Select your country</option>
                         <option>USA</option>
                         <option>Singapore</option>
@@ -49,23 +49,24 @@
                 </div>
 
                 <!-- Subscribe -->
-                <div>
-                    <div class="mt-4">
-                        <input type="checkbox" id="subscribe">
-                        <label for="subscribe">
+                <div class="col-md-12 col-lg-4 mb-3">
+                    <div class="form-check mt-4">
+                        <input class="form-check-input" type="checkbox" id="subscribe">
+                        <label class="form-check-label" for="subscribe">
                             Subscribe to newsletter
                         </label>
                     </div>
                 </div>
-
+            </div>
+            <div class="row">
                 <!-- Message -->
-                <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="4"></textarea>
+                <div class="col-lg-12 mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" rows="4" class="form-control"></textarea>
                 </div>
 
                 <!-- Submit Button -->
-                <div>
+                <div class="col-lg-12 text-center">
                     <button type="submit" class="btn btn-primary mt-3">Submit</button>
                 </div>
             </div>
